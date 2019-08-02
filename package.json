@@ -1,0 +1,54 @@
+{
+  "name": "es6test",
+  "version": "1.0.0",
+  "description": "This is a chance to test es6 with node 9.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --inspect register.js ./index.js --presets env,stage-2",
+    "dev": "babel-node index.js --presets env,stage-2",
+    "watch": "node my-bundler.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhildred/es6test.git"
+  },
+  "keywords": [
+    "node",
+    "es6",
+    "problem",
+    "solving"
+  ],
+  "author": "Rich Hildred",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhildred/es6test/issues"
+  },
+  "homepage": "https://github.com/rhildred/es6test#readme",
+  "dependencies": {
+    "async": "^3.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "cheerio": "^1.0.0-rc.3",
+    "date-utils": "^1.2.21",
+    "express": "*",
+    "firebase": "^6.3.3",
+    "firebase-admin": "^8.3.0",
+    "html-word-count": "2.0.0",
+    "node-fetch": "^2.6.0",
+    "save": "^2.4.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "sourceMaps": true,
+    "retainLines": true
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "parcel-bundler": "^1.12.3"
+  }
+}
